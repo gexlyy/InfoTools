@@ -1,0 +1,141 @@
+.notes-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 90vh;
+    justify-content: flex-start;
+    height: auto;
+    padding: 10px;
+}
+
+.creating-note {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    flex-direction: column;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.creating-note input {
+    outline: none;
+    background: #ebfffc;
+    padding-left: 10px;
+    border: none;
+    margin: 5px 0;
+    border-radius: 20px;
+    height: 40px;
+    width: 100%;
+    max-width: 300px;
+    box-sizing: border-box;
+}
+
+.creating-note button {
+    cursor: pointer;
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    width: 100px;
+    text-align: center;
+    height: 35px;
+    font-size: 14px;
+}
+
+.button.clicked {
+    background-color: red;
+    color: white;
+}
+
+.notes {
+    margin-top: 20px;
+    width: 100%;
+    max-width: 400px;
+}
+
+.notes li {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+    border-top: 1px solid black;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.note-item {
+    width: 100%;
+}
+
+.item-content {
+    width: 100%;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+.item-content h3,
+.item-content p {
+    margin: 0;
+    font-size: 16px;
+    white-space: pre-wrap; /* Автоматический перенос текста */
+    word-break: break-word; /* Перенос длинных слов */
+}
+
+.edit-input {
+    outline: none;
+    padding: 5px;
+    margin-top: 5px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.note-item-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.note-item-button-delete,
+.note-item-button-edit {
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    padding: 5px;
+    font-size: 14px;
+}
+
+/* Медиа-запрос для узких экранов */
+@media (max-width: 400px) {
+    .creating-note {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .notes {
+        width: 100%;
+    }
+
+    .notes li {
+        padding: 10px;
+    }
+
+    .item-content {
+        width: 100%;
+    }
+
+    .note-item-buttons {
+        gap: 5px;
+    }
+
+    .note-item-button-delete,
+    .note-item-button-edit {
+        font-size: 12px;
+        padding: 3px;
+    }
+}

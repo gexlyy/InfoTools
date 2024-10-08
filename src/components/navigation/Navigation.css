@@ -1,0 +1,81 @@
+header {
+  height:60px;
+}
+
+.nav-main {
+  position: relative;
+  margin: 0;
+}
+/* Бургер-кнопка */
+.menu-burger {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+/* Выпадающее меню */
+.nav-list {
+  position: absolute;
+  top: 60px; /* Смещение вниз от кнопки */
+  left: 20px;
+  width: 200px;
+  background-color: rgba(38, 38, 38, 0.95);
+  border-radius: 5px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 10px 0;
+  z-index: 999;
+}
+
+.nav-list ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-list-item {
+  text-align: left;
+  padding: 10px 20px;
+}
+
+.nav-list-item a {
+  text-decoration: none;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.nav-list-item a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+}
+
+/* Адаптация для мобильных */
+@media (max-width: 768px) {
+  .menu-burger {
+    top: 15px;
+    left: 15px;
+  }
+
+  .nav-list {
+    width: 150px;
+    left: 15px;
+  }
+
+  .nav-list-item {
+    padding: 8px 15px;
+  }
+
+  .nav-list-item a span {
+    font-size: 0.9rem;
+  }
+
+  .nav-list-item a svg {
+    width: 24px;
+    height: 24px;
+  }
+}

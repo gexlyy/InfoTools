@@ -1,0 +1,45 @@
+.home-main {
+  place-self: center;
+  width: 95%;
+  justify-content: center;
+  padding: 40px;
+  border-radius: 10px;
+  background-image: linear-gradient(45deg, #2f4680, #500ae4);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.home-list {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.home-list li {
+  list-style-type: none;
+  color: white;
+}
+
+.home-list-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* Убираем подчеркивание у ссылок и стилизуем span */
+.home-list-item a {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.home-list-item span {
+  margin-top: 10px;
+  font-size: 1.2rem;
+  text-decoration: none; /* Убираем подчеркивание у текста */
+}

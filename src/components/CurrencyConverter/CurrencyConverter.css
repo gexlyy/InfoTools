@@ -1,0 +1,124 @@
+.currency-main {
+    place-self: center;
+    width: 100%;
+    height: 450px;
+    max-width: 350px;
+    border-radius: 10px;
+    background-image: linear-gradient(45deg, #2f4680, #500ae4);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.amount-convert,
+.convert-from,
+.convert-to,
+.convert-result {
+    color: white;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column; /* Устанавливаем вертикальное расположение для span и input */
+    align-items: flex-start;
+    width: 80%; /* Центрирование контейнеров */
+}
+.amount-convert input,
+.convert-from input,
+.convert-to input,
+.convert-result input {
+    width: 100%; /* Полная ширина родительского контейнера */
+    padding: 5px; /* Отступ для улучшения внешнего вида */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.amount-convert span,
+.convert-from span,
+.convert-to span,
+.convert-result span {
+    margin-bottom: 5px; /* Отступ между текстом и полем ввода */
+}
+
+.convert-btn {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    width: 80%; /* Совпадает с шириной полей ввода */
+}
+
+
+.convert-btn button {
+
+    width: 100%; /* Кнопка будет занимать всю ширину родительского контейнера */
+    padding: 10px; /* Добавьте отступ для улучшения внешнего вида */
+    background-color: #ffffff; /* Добавьте цвет фона для кнопки */
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.input-container {
+    position: relative;
+    width: 100%;
+}
+
+.input-wrapper {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 0 10px; /* Отступы для выравнивания */
+    background-color: white;
+    box-sizing: border-box;
+}
+
+.currency-flag {
+    width: 20px;
+    height: 15px;
+    margin-right: 8px; /* Отступ справа от флага */
+}
+
+.input-with-currency {
+    flex: 1;
+    border: none;
+    outline: none;
+    background: none;
+    padding: 10px 0;
+    font-size: 14px;
+}
+
+.dropdown-list {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 5px;
+    list-style: none;
+    padding: 0;
+    max-height: 150px;
+    overflow-y: auto;
+    z-index: 10;
+}
+
+.dropdown-list li {
+    padding: 10px;
+    display: flex;
+    color: black;
+    align-items: center;
+    cursor: pointer;
+}
+
+.dropdown-list li:hover {
+    background-color: #f0f0f0;
+}
+
+.dropdown-flag {
+    width: 20px;
+    height: 15px;
+    margin-right: 10px;
+    border-radius: 3px;
+}
